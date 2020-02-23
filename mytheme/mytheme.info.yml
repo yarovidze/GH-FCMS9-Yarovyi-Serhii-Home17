@@ -1,0 +1,48 @@
+name: mytheme
+description: A theme based on Radix.
+screenshot: screenshot.png
+core: 8.x
+# version: VERSION
+engine: twig
+type: theme
+base theme: radix
+
+regions:
+  main_head: Main header
+  navbar_branding: Navbar branding
+  navbar_left:  Navbar left
+  navbar_right: Navbar right
+  about_us_header: About us header
+  foto_section: Foto section
+  mac_section: Mac section
+  opinion_section: Opinion section
+  our_service_header: Our service header
+  our_team: Our team
+  pricing: Pricing
+  try_our_template: Try our template
+  footer_1: Footer 1
+  footer_2: Footer 2
+  content: Content
+#  header: Header
+#  page_bottom: Page bottom
+#  footer: Footer
+
+libraries:
+  - radix/style
+  - mytheme/style
+
+libraries-override:
+  radix/bootstrap: false
+
+ckeditor_stylesheets:
+  - assets/css/mytheme.style.css
+
+component-libraries:
+  mytheme:
+    paths:
+      - ./src/components
+
+# Information added by Drupal.org packaging script on 2020-01-26
+version: '8.x-4.7'
+project: 'radix'
+datestamp: 1580057585
